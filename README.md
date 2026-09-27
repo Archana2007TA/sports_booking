@@ -1,4 +1,4 @@
-# 🏏 IPL Match Booking
+# 🏏 Sports Match Booking
 
 A full-stack ticket booking web app for IPL matches, built with **React** and **Supabase**. Users can sign up, log in, view upcoming matches, book seats in real time, and see live seat availability update instantly across all connected users.
 
