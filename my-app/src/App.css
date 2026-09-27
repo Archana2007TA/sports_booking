@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f4f6f9;
+  min-height: 100vh;
+  color: #333;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+}
+
+.app-header {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 36px;
+}
+
+.app-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 6px;
+}
+
+.app-header p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+.match-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+}
+
+.match-teams {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1a1a2e;
+}
+
+.match-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 2px 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #e0f7e9;
+  color: #1e8449;
+  margin: 6px 0;
+}
+
+.seats-info {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.seats-bar {
+  background: #eee;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.seats-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  transition: width 0.3s ease;
+}
+
+.booking-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.booking-form input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.booking-form input[type="text"] {
+  flex: 1;
+  min-width: 140px;
+}
+
+.booking-form input[type="number"] {
+  width: 70px;
+}
+
+.booking-form button {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.booking-form button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.booking-message {
+  width: 100%;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  color: #185a9d;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1a1a2e;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  padding: 6px 4px;
+}
+
+.navbar-links a.active {
+  color: #ee0979;
+  border-bottom: 2px solid #ee0979;
+}
+
+.home-container {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.home-container h1 {
+  font-size: 2.2rem;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.home-container p {
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+}
